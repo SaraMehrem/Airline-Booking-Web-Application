@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --color1: #e2bc5f;
+    --color2: #000;
+    --color3: #f5f5f5;
+    background-color: var(--color3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* nav bar  */
+/* -------------------------------------------------------------------- */
+.nav .logo {
+    width: 70px;
+    margin: 20px 5px 20px 20px;
+}
+
+.nav .airlineName {
+    color: var(--color1);
+    text-shadow: 5px 5px 10px var(--color1);
+    font-size: 25px;
+    width: 300px;
+}
+
+header {
+    display: initial !important;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color2);
+}
+
+.nav .listContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.nav .listContainer .menu {
+    display: flex;
+}
+
+.nav .listContainer .list {
+    margin: 30px 0px 30px 30px;
+    padding: auto;
+}
+
+.nav .listContainer .list .aNav {
+    text-decoration: none;
+    color: var(--color1);
+    text-shadow: 5px 5px 10px var(--color1);
+    font-size: 20px;
+}
+
+.nav .listContainer .buttonNav {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    width: 100px;
+    background-color: var(--color1);
+    border: var(--color1);
+    border-radius: 10px;
+}
+
+.nav .listContainer .buttonNav:hover {
+    background-color: goldenrod;
+}
+
+.nav .listContainer .buttonNav .buttonA {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+
+    /* NavBar */
+    /* -------------------------------------------------------------------- */
+    .nav {
+        width: 110vh;
+    }
+
+    .logo {
+        width: 200px;
+        height: 50px;
+    }
+
+    .airlineName {
+        display: none;
+    }
+
+    .listContainer {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 716px) {
+    .nav{
+        width: 110vh;
+    }
+    .airlineName {
+        display: none;
+    }
+
+}
+
+/* @media (min-width: 716px) and (max-width: 767px) {
+    .nav{
+        width: 110vh;
+    }
+  
+
+} */
+
+/* footer */
+/* -------------------------------------------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+}
+
+.contact {
+    color: var(--color1);
+    margin: 30px;
+    width: 20%;
+}
+
+.contactWays {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+}
+
+.socialMedia {
+    text-decoration: none;
+    color: var(--color1);
+    margin: 30px;
+}
+
+/* Footer */
+/* -------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+    .footer {
+        width: 110vh;
+    }
+
+}
+
+    @media (min-width: 481px) and (max-width: 716px) {
+        .footer{
+            width: 110vh;
+        }
+}
+
+/* -------------------------------------------------------------------- */

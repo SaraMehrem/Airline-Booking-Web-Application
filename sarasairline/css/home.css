@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    --color1: #e2bc5f;
+    --color2: #000;
+    --color3: #f5f5f5;
+    background-color: var(--color3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* the first section (background image and welcome message) */
+/* -------------------------------------------------------------------- */
+
+.headSec {
+    width: 100%;
+    height: 65vh;
+    background-image: url("../resources/images/99.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+}
+
+.headSec .wlcMsg {
+    color: var(--color1);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 150px;
+    text-shadow: 2px 2px 2px var(--color1);
+}
+
+@media (max-width: 480px) {
+    .headSec{
+        width: 110vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 716px) {
+    .headSec{
+        width: 110vh;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
+/* the second section (about) */
+/* -------------------------------------------------------------------- */
+
+#about {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#about .aboutHeader {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#about .discribtion {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    #about{
+        width: 110vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 716px) {
+    #about{
+        width: 110vh;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
